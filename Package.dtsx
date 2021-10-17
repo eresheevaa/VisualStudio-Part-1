@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/17/2021 10:05:31 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-AKVCOSUB"
+  DTS:CreatorName="LAPTOP-AKVCOSUB\alibe"
+  DTS:DTSID="{3F9401E6-1FAA-458F-AC3B-218BA7E6808F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{29005D93-D56B-43C4-BE55-19F438AF97E4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{85FB5358-BF59-436E-9C42-05CD730E3E69}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{85FB5358-BF59-436E-9C42-05CD730E3E69}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC4r/kXXzv6gMkbvEqAZbfOn6UIEaq3SpYnk516uTt2FAAAAAAOgAAAAAIAACAAAACFMFdkrJ1hP7WWbgXKDOy9IuE3m9vp2BwCzUjr2IBOAiAAAAAItLiycbAfQid/9KQeF+9hxtW5u1Sh5emPU2RJTk0V6UAAAAB2xz/aK7IBAR5S/VZRAZjmVGylpzluUh1vpWhcCLCYYhVdf7DeG8SfOd9y6tWI/XwUFtJ1nJ5OZKhn6tT1vtuK</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{E403DBA3-3A09-4968-86B0-60B31F626166}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{E403DBA3-3A09-4968-86B0-60B31F626166}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB5gC1JMlMJVRcgU07dh5DMMFFvHOncp2N1YojgBq2N9AAAAAAOgAAAAAIAACAAAADECkJ+Dcr4t/pKnYPIQ7UQYV1ExkITqPtkMYnHPpsrSSAAAAAkCFbb4gdbGa4ef8ynP/pYjKHyYDL+pgOvrjxlEBZYAUAAAADb+ka4fdKS8h2E1mz8ICLj/XXEcOFJ8mSTgPNgnFIYTsCBp0ymSbrEJCZcTFg9FASW52sutnVGMxRb4dBv8XCM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{DD1A4A4F-B1A8-4136-A611-7857CE01C378}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{DD1A4A4F-B1A8-4136-A611-7857CE01C378}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAeRhSmxGdHyTOcFZZPXWkPILb5n6jVmpLY69YSn50r1QAAAAAOgAAAAAIAACAAAAAT3lqchwrpHts6AiRkT3xFH3zDuIBwZiSwtzn0igioUiAAAAD8iLfhJ1Fv2Y9R1WG9bi5AkmMTl31NvnOmD2i5x7XSKkAAAACj52qsMQvauI/pzQslhz/tM3uMpAY5hIFs6zO8lhtpcsHJMZUoRKlPPIl8O4ofsE7gai+vw0dSJGMQY5/jsgux</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5A89ECD9-5AA0-4A41-B033-AF7BC0027716}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{5A89ECD9-5AA0-4A41-B033-AF7BC0027716}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAX3G+ExOWlrpOhGw3FoZ2833f+zKQXtNDqSp6AFMx3GgAAAAAOgAAAAAIAACAAAAApzFoqoTk1DfaFc/Yeuq5OelE3QAoS9EQ2nCCJy36ELSAAAACDTMk0GrzFK/Nc+ELdpE8xKkf3B/mmCXXLJ4bL1gSKKEAAAABUT+VF0wcyi9vzyNTa0ZOEa+tJNYHjIP4k200BhVuDDwe/0PV5IJxwBOIkNay4oho3ZhDZRQTeQNWV6IV6qbOY</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 4]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{1330B004-A4FD-475D-B7AA-B7FEF1E3473A}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{1330B004-A4FD-475D-B7AA-B7FEF1E3473A}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACj3DxCp0ZILgy6FZv+D3LDktxL3QSa/6ukDIleIvV+ygAAAAAOgAAAAAIAACAAAABjda+oIYhsyrwsCElFBL/GZ3M9DJ0kbw1eHLXR7lf1hyAAAAB/Fe0QesAEwRwabixqmRecv6jXd1xq9BP0KtB7QHpA+0AAAADIhDRC2tYbP9tiCcgVUfdatK8uIA1KgpM4Z9yrTSpkFdG2a98C2kVj0ZfMXd3xrDfTdaQTYeBbi2zyNMTeCoU/</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 5]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{EC5211DA-78FF-4DE3-A7EA-2AD61D4F4762}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{EC5211DA-78FF-4DE3-A7EA-2AD61D4F4762}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADHzgZblcLtbKbTgaJBTgG15Qpt/vYB8hbdiSrI2DCCUgAAAAAOgAAAAAIAACAAAACbCGVwh9X4mSTjI6w3nDMRT3HzvfonKoJYf1491jFXZyAAAAA7jXmKGI29Oc5hj80Ge662aGJBhxJLOpO9zQBfrznTi0AAAADqBW2EPjQyS5is4ORVpf9mUTMkJSTHxh3RgP7mDa4DGOnTJnW/InGFuAYVM9ZIB3ojdZWE5fRsIKtlQDucb0rV</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 6]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{41C89237-BAD3-4754-BC12-0E10D9DB3A78}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{41C89237-BAD3-4754-BC12-0E10D9DB3A78}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADk898G7L7xw7CEyru2nXpz6odpBYJnc8F33aVLtAyJbwAAAAAOgAAAAAIAACAAAADw2Irf3JekeC2O0p1pO9N+PZ1Zs/0jiMRkH/6nHdLZbyAAAACNu7+D/Nuw3sXEAmV9yN5CWtDvCX+oVJo18NbRqjDea0AAAAAbm/33L1cRWP8I6FYTD7gnqsMyjB1HTFyAVemhWsuoLnVTj1uXbRskw6fa02ZgKrHPsnK5BwlSVp9FrjkOxlX/</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 7]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{4BAA99C8-79EC-4998-9A84-9CA0BB736A23}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{4BAA99C8-79EC-4998-9A84-9CA0BB736A23}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADauGGr0iMWkp2T9zgqB/b8sMCzwfi6wiU6EWQ27ABjNAAAAAAOgAAAAAIAACAAAADH3XT6k3adfouC8VT5cMnJlR+XdXhGbamU2iTbf+wQ9SAAAADADasQtDlNcgE0QtkD3fiDoTglCf9tOcS0J4izdEzu4kAAAAB8jsFh5lwLSpyAKVEsPCXenj696G4mkGOBgXxsavmIJovqZND/zeelpOVMxkLiLSX1j2idt0D2VZIhfSx5W7DC</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 8]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5F1B0865-898F-4957-89E0-2AC1C5D1CFA5}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=Adventure-test;Persist Security Info=True;Application Name=SSIS-Package-{5F1B0865-898F-4957-89E0-2AC1C5D1CFA5}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACnEL0hujFV1iN/RunLxRuAyrOygYORQk+MdTN80ZNGAQAAAAAOgAAAAAIAACAAAAB0hwW2qIn4hClBBl3N/jsfs2z4VSo0sULThnnwqAU5WCAAAABNerSzptHnl2pUlj70Du4chyLPQ0QXPGeeQcb8QmQ5bkAAAADpeEFQSG82384x2vx3vdNWo42JpoaKVfkaxA7k2JC/bHdFP1I0dIBdVDP1uJJGDrK2Vr3Su8tf6++usLPGkXAo</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{CA4D3060-ADF5-417C-B4C7-922AA189E17F}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{CA4D3060-ADF5-417C-B4C7-922AA189E17F}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB51/vQ6mvHac780sabcUNl3NpoejkbZawmMUCrIVdrUwAAAAAOgAAAAAIAACAAAABXgtLhveI3FpE7N4wdjCAXlC02gjN1hn+dWfetC+bQiyAAAAAfRHBv4hEpFnRtnfkBMEGq1zri/M/Umd2s328+5+32y0AAAACwa+UxAVu3kq6FyMDZoIovUK96K5AwzAIjfONn7Zxra5+wVwqqley+KfHpsRoHOYhVNnRjUAHgalI7Vn5U6Ngr</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{85EA6B7C-CDAE-4459-A5F2-40C00CC6B65D}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{85EA6B7C-CDAE-4459-A5F2-40C00CC6B65D}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABj3rR9ceLhdYxai7pXmhXTF1QRl0aK+dSHuGcoyLn7vwAAAAAOgAAAAAIAACAAAAB0bBDZFKLziPJBUk6wK9qn4hY2HiQE+/QT4DVN8M5CfiAAAAAXM6JvjTuDEQMB3IJ2NWHx/spTcNCKxEhAz9IVVRT5hUAAAABCNadnxj2s7m94skIN24BU5x8koWExKasHtJCJ8akMDLJwzgi/y0hkf+xAh8CZjzn3SHgl3WaklcRaK/5FQW7e</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 10]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{EAAB8542-4F32-47E3-8DE1-08F6E776DAD0}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{EAAB8542-4F32-47E3-8DE1-08F6E776DAD0}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSN5qz0e0yh8l4/EnejWIi8TX8+QW8sRj9XMY+K/G18gAAAAAOgAAAAAIAACAAAABo2mTo31klEnmGeVQhBxVTGg9kUk518JXNR+YlOn3PlCAAAAAXeo5rSnUpGKHMLErbs/e5oAkRHKiIJpVKEv7wC4b4rEAAAACPs+VwH1Y096w9360kRhzRL4DTxpF+A5sUVcKqLxmSzo1doohp8RKHAMYqaABeUaAvC7qWnBf5VTqNdmigFxLL</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 11]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{06081E7B-739E-4559-B0B5-43388245D937}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{06081E7B-739E-4559-B0B5-43388245D937}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAABIQMdoFwBLELpOY4zUoPqrBrgc51XladGbc65XQqh+wAAAAAOgAAAAAIAACAAAABsG/zAu3EfoqiilQjWUuQbBo0rqCZRR1did8h4EIX7JSAAAACOcSIWP5tVno9UyT5yLDVH3e6n5GhXC1QwYuUuLjQV9EAAAACXyIG/o2vBxS+0oLY7Mb7TpVhC6axf8EjnNSrMc1XgFYHUwI+HnvLtQo2xobIaXaIEniIrT3tAiI5gZHLRzlid</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 12]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{46D9D94D-156E-4389-86BD-99AD50A7CCDC}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{46D9D94D-156E-4389-86BD-99AD50A7CCDC}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACizmj6/imWRy7r1xe8HSJFK6tTBMDq7R44qhDnQVehfAAAAAAOgAAAAAIAACAAAADgOdNHAsGDdSo9bysL/elGyHcKewUIaEce/UPLYAa2IyAAAAA23XpfzXNxOJrYP3oUyH2AcyfM5+geyuIwjEEiI6lKc0AAAABJCZRoSnao5zj0ra+QsQSuCUnRronduhFRZfz4Ei7AI95T8yIPgboGyOWDHy3+5vdcOmDCNOi+sBi5Is6fdoB1</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 13]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{7C68C1B8-1970-4E35-B8C7-875729754FCC}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 13">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{7C68C1B8-1970-4E35-B8C7-875729754FCC}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABL9Y0p2KiUVfwiNDEinH9G4N45xxhfMuTi4lJLmUQNUAAAAAAOgAAAAAIAACAAAAAdM43GZOyHE+u3M8qvlnTT+kFebNYZbPa6YjWCY2a+rCAAAABaCxDN09B1vMkEE2DYBNpVF4h806lMn3l05MI7gTmBhUAAAAAdHrrOhu4UEsjCkF+2LMxPqXwDGnqwuWtZua1xTqwEz75ARAuljSh9xJIbAPD6jplpCOqVOBP6AXfwnpGubbw3</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 14]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{093C24F4-1F8A-4FB5-952E-CE8059AA7DB3}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 14">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{093C24F4-1F8A-4FB5-952E-CE8059AA7DB3}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAUApNb8qh5MZKe9N/jKsYx2bx4YhXFyJ34uY+kz9M6bgAAAAAOgAAAAAIAACAAAAAStlPlbjw7/f3O/xr6Wab9EUrs2fkHi5fdC6151U0bTSAAAACE3I42UxgRJ1eEJAG3hHLheFGPYYMEfTjFv0D+JTz8tkAAAAD+eOGrTmw0F792tGAaKQo0ZZsuOY6/Qmlxc8fW4Khx1VSrLX3hrja2c2iWxR/fa8CevCy2q79JRY9H6iXDVze4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 15]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{4FFE2889-45C5-4735-9E0F-DA43DA0C2064}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 15">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{4FFE2889-45C5-4735-9E0F-DA43DA0C2064}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACIHwZEtn1SygkypXYmNriOQ9DMu9rVRbZPhX+NKqwWpwAAAAAOgAAAAAIAACAAAAB25+cl6KX/cN5jVCuJNeZw/tp3Nl0pHY2jcpl+aAIHyyAAAABLKsDlovLuieP7BalR5/j+jbz9dSA0JEYe2qWVhfiRAkAAAADsX6K0OxtH9mBUB99b1UllA9uEwPBSEIT2Jx42mJ1Ajhj7CX70Ud/45pJRPVtY0zcdTQvJm4PolyxORLK2ck2c</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{7D8BF2D4-7696-4621-B6F1-6B8E2F753802}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{7D8BF2D4-7696-4621-B6F1-6B8E2F753802}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABWzx96U5c/pzlX/5WRE2q5Cd1tbMY1S/FOuSNKtJqyqQAAAAAOgAAAAAIAACAAAAA0Fw9hy8b9coXdgQ27XZ04iGMLXEKVJxPgfxMUeat/4CAAAAAHFbL+j5UOsJXyXIztcCHTXvypOCg5dwWYaKCFqDUkNkAAAABREDUYd0jjPuwVbRlTbrIMighwUmBKNx4tx0997x4TC4nm3Mx24cl6T/XzSsDbONMAhm50lagZhFn0rwZxwsvU</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{E59239B6-1F68-4B66-BCFE-7DF13B51C08A}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{E59239B6-1F68-4B66-BCFE-7DF13B51C08A}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACkB8GUtQTwCGWq8Y3oL9StQaFKscTD6+v99DIsfPHhHgAAAAAOgAAAAAIAACAAAAC40FdV6dNCEdHIiuJ3ZE2hNtKtWkggkAzbXFNnr0KP6CAAAABhbR2pUzWKzR/DfSTpoquQMV9jIei4HO4aoZ/x8+LqGkAAAADo52K/+/da44V6bvfU3cShKESN38fdhP9E+bZBc1WUHHADpVhtKSezRCgeB58jVQGf5BJa8GC/ASbr6cLadl7l</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 4]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{752C95FC-35E7-4DD0-8581-0ADA58F21770}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{752C95FC-35E7-4DD0-8581-0ADA58F21770}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAlwD9xNkpBiYAbVy0BDCPLb2nh8qOHlx4EqPKf2drmvwAAAAAOgAAAAAIAACAAAAAo1AXPWa+OyuPvK3FN6m2BqU9F9fUtPzfSkQMBAk+csCAAAACexxdffotcIf5vLMEYq0NbVbLW2hMIflVUDd9U8APm3UAAAAA2BsZy4yyXz8E0Wo1miK0J/otrLRP/Voj/aWPPNHPdPpaFJigfN7NqFAF54SeLeYpnlmDZlCitCWVPbNnYDDhE</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 5]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{56765ADE-AE56-4E4D-9D85-F57E6909C278}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{56765ADE-AE56-4E4D-9D85-F57E6909C278}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACyFYKNvi92APeNNonKFvhdSxcSDROPn4ZUtrR6Qa1dZAAAAAAOgAAAAAIAACAAAADg5UeTnKWxS4BhMhHB3kX85l8Ia4TZXNWuE/twU9jjriAAAADJcNLB465i1lbcFVv73NQCF+K0gHTtGoJmFGZcA2rEsEAAAACw/N9DdvTa59rdqZ8adJTuP/eSSHyx+g4No5geebpaY/szYTcqciYQcu2IxpXdds3/19Lgj2Xm+giTvejfDvfY</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 6]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FFE83B09-DE97-4322-96DC-259B9CF426A0}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{FFE83B09-DE97-4322-96DC-259B9CF426A0}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADU8i4nSPne4TOTYFxVdjFDQmbpRPHX3JuDv8K4fx9OSwAAAAAOgAAAAAIAACAAAAADPu7okN9FY345nUEGcb3AadIi484b05k5KammvsS+yyAAAAAjZvqzbjGFfIlsUUE699yLa7sETyLRATrsjUS1IYLahUAAAABP4a5JDOfpQG5ycajue7u8OoCAoNkePWqCRn0y3cvBIULf9lZCg+aTzYO53UPqNqVgyjAhJyV7L7eEQxssHU8U</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 7]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9D872BC2-3E34-4575-84AB-27DE410F29A7}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{9D872BC2-3E34-4575-84AB-27DE410F29A7}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACCSa9VM9423HNRgFH7svOy7Gkyjf/Qndty9Bqfdn9ePQAAAAAOgAAAAAIAACAAAAAoOSF11o/cgDiV3GjRUtHemJHWv3OI1bkpOAbeUB+WnyAAAAAKmGbDUPzoTuegsc18VDgPZ1wGtY5ylRYEGtvqIHjTK0AAAADgqTlDkIZi/5NESfRVhq/Rx7Je2x+Y8uyIKea8Hbsxhkf3w06P0/D/Lnnxybl5mK8ys8eMIojp2d+lNOKi7eQD</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 8]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{DCE240E2-0645-4994-AA04-30F4C1CAA35E}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{DCE240E2-0645-4994-AA04-30F4C1CAA35E}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABj6hsX1c0mgrWpWn5HaNV3uoJU0PgKDmfm7NhZ1R8B6gAAAAAOgAAAAAIAACAAAACheW5c2hXMwq6gDRZ/mL4b2ADT7Nfa11n6UFZmP05xFiAAAADFeFsCPUSSCUKADVBsIwb04YFZ2fRCb9Gu+6h7hHhpjkAAAADY+ZKN7qxS/48PGwUdm2stngkDx9EcpJ5tkuywMsGaDy5OvTTwzU6LeOfg7V8I5jrJo/oTqZ9FtgNsCgLpYUpF</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 9]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{B583BC27-FE0F-46D4-A8FB-318C4CB8FF32}"
+      DTS:ObjectName="adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com;User ID=syntax;Initial Catalog=AdventureWorks;Persist Security Info=True;Application Name=SSIS-Package-{B583BC27-FE0F-46D4-A8FB-318C4CB8FF32}adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syn;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOyhSWEGsEWBCvhFZbN+aQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABfD9eGt3/yarpBn5GP5Z0m8iXNxOxf/2S9EiHj5VT8EAAAAAAOgAAAAAIAACAAAABrgjXWuTl6LgxTnXVr52zMAvnSrqzbFmcBAhIXAFXsRCAAAACUZt3cB+OefyRyPVxzjawW0Hn+bOHGz4spLY1RDs3+m0AAAAAmZSggtIeqhCbaNAwWt7djFaF8NimVFoBfCXC91hX+WGGZues2q7N/EY4D42WGsVtXBsPBI/UwV63e9TeA2Tf2</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CB23B068-26DE-4C93-BB38-0FC5C54DC4F3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\ADO NET Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"task8_Alina"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 8]"
+                  connectionManagerRefId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.Adventure-test.syntax 8]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[BusinessEntityID]"
+                      cachedDataType="i4"
+                      cachedName="BusinessEntityID"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[BusinessEntityID]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[BusinessEntityID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Expr1]"
+                      cachedDataType="i4"
+                      cachedName="Expr1"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Expr1]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Expr1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Expr2]"
+                      cachedDataType="i4"
+                      cachedName="Expr2"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Expr2]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Expr2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[MaritalStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="MaritalStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MaritalStatus]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[MaritalStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Gender]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[HireDate]"
+                      cachedDataType="dbDate"
+                      cachedName="HireDate"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[HireDate]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[HireDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[GroupName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GroupName"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[GroupName]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[GroupName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[MiddleName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MiddleName"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MiddleName]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[MiddleName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[NumberOfYearsEmployed]"
+                      cachedDataType="i4"
+                      cachedName="NumberOfYearsEmployed"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NumberOfYearsEmployed]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[NumberOfYearsEmployed]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AgeWhenHired]"
+                      cachedDataType="i4"
+                      cachedName="AgeWhenHired"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AgeWhenHired]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[AgeWhenHired]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FullName]"
+                      cachedDataType="wstr"
+                      cachedLength="152"
+                      cachedName="FullName"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FullName]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FullName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FullName2]"
+                      cachedDataType="wstr"
+                      cachedLength="183"
+                      cachedName="FullName2"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FullName2]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FullName2]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[BusinessEntityID]"
+                      dataType="i4"
+                      name="BusinessEntityID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Expr1]"
+                      dataType="i4"
+                      name="Expr1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Expr2]"
+                      dataType="i4"
+                      name="Expr2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MaritalStatus]"
+                      dataType="wstr"
+                      length="1"
+                      name="MaritalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="1"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[HireDate]"
+                      dataType="dbTimeStamp"
+                      name="HireDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[GroupName]"
+                      dataType="wstr"
+                      length="50"
+                      name="GroupName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NumberOfYearsEmployed]"
+                      dataType="i4"
+                      name="NumberOfYearsEmployed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AgeWhenHired]"
+                      dataType="i4"
+                      name="AgeWhenHired" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FullName]"
+                      dataType="wstr"
+                      length="152"
+                      name="FullName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FullName2]"
+                      dataType="wstr"
+                      length="183"
+                      name="FullName2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\ADO NET Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT Employee_1.BusinessEntityID, HumanResources.EmployeeDepartmentHistory.BusinessEntityID AS Expr1, Person.Person.BusinessEntityID AS Expr2, Employee_1.MaritalStatus, Employee_1.Gender, Employee_1.HireDate, 
+                  HumanResources.Department.Name, HumanResources.Department.GroupName, Person.Person.FirstName, Person.Person.MiddleName, Person.Person.LastName,
+DATEDIFF(Year,Employee_1.HireDate,getdate()) as NumberOfYearsEmployed,
+DATEDIFF(year,BirthDate,HireDate) as AgeWhenHired,
+Person.Person.FirstName+' '+ISNULL(Person.Person.MiddleName,' ')+' '+Person.Person.LastName as FullName,
+convert(varchar, Employee_1.BusinessEntityID)+ ' ' +Person.Person.FirstName+' '+ISNULL(Person.Person.MiddleName,' ')+' '+Person.Person.LastName as FullName2
+
+FROM     HumanResources.Employee AS Employee_1 INNER JOIN
+                  HumanResources.EmployeeDepartmentHistory ON Employee_1.BusinessEntityID = HumanResources.EmployeeDepartmentHistory.BusinessEntityID INNER JOIN
+                  HumanResources.Department ON HumanResources.EmployeeDepartmentHistory.DepartmentID = HumanResources.Department.DepartmentID INNER JOIN
+                  Person.Person ON Employee_1.BusinessEntityID = Person.Person.BusinessEntityID</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 15]"
+                  connectionManagerRefId="Package.ConnectionManagers[adventure-works.cdjflmucstpo.us-east-1.rds.amazonaws.com.AdventureWorks.syntax 15]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[BusinessEntityID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BusinessEntityID]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[BusinessEntityID]"
+                      name="BusinessEntityID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Expr1]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Expr1]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Expr1]"
+                      name="Expr1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Expr2]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Expr2]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Expr2]"
+                      name="Expr2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[MaritalStatus]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[MaritalStatus]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[MaritalStatus]"
+                      name="MaritalStatus"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Gender]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[HireDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[HireDate]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[HireDate]"
+                      name="HireDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[GroupName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[GroupName]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[GroupName]"
+                      name="GroupName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FirstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FirstName]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[MiddleName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[MiddleName]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[MiddleName]"
+                      name="MiddleName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastName]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[NumberOfYearsEmployed]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[NumberOfYearsEmployed]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[NumberOfYearsEmployed]"
+                      name="NumberOfYearsEmployed"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[AgeWhenHired]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AgeWhenHired]"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[AgeWhenHired]"
+                      name="AgeWhenHired"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FullName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FullName]"
+                      length="152"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FullName]"
+                      name="FullName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FullName2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FullName2]"
+                      length="183"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].Columns[FullName2]"
+                      name="FullName2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BusinessEntityID]"
+                      dataType="i4"
+                      name="BusinessEntityID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Expr1]"
+                      dataType="i4"
+                      name="Expr1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Expr2]"
+                      dataType="i4"
+                      name="Expr2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[MaritalStatus]"
+                      dataType="wstr"
+                      length="1"
+                      name="MaritalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="1"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[HireDate]"
+                      dataType="dbDate"
+                      name="HireDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[GroupName]"
+                      dataType="wstr"
+                      length="50"
+                      name="GroupName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[NumberOfYearsEmployed]"
+                      dataType="i4"
+                      name="NumberOfYearsEmployed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AgeWhenHired]"
+                      dataType="i4"
+                      name="AgeWhenHired" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FullName]"
+                      dataType="wstr"
+                      length="152"
+                      name="FullName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FullName2]"
+                      dataType="wstr"
+                      length="183"
+                      name="FullName2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BusinessEntityID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BusinessEntityID]"
+                      name="BusinessEntityID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Expr1]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Expr1]"
+                      name="Expr1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Expr2]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Expr2]"
+                      name="Expr2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[MaritalStatus]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[MaritalStatus]"
+                      name="MaritalStatus" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Gender]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Gender]"
+                      name="Gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[HireDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[HireDate]"
+                      name="HireDate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[GroupName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[GroupName]"
+                      name="GroupName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[MiddleName]"
+                      name="MiddleName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[NumberOfYearsEmployed]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[NumberOfYearsEmployed]"
+                      name="NumberOfYearsEmployed" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AgeWhenHired]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AgeWhenHired]"
+                      name="AgeWhenHired" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FullName]"
+                      dataType="wstr"
+                      length="152"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FullName]"
+                      name="FullName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FullName2]"
+                      dataType="wstr"
+                      length="183"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FullName2]"
+                      name="FullName2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[ADO NET Source Output]"
+              endId="Package\Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Data Flow Task\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="425.833316412238,199.333334917492" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\Data Flow Task\ADO NET Source"
+          TopLeft="464,175" />
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Data Flow Task\ADO NET Destination"
+          TopLeft="563,292" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[ADO NET Source Output]"
+          TopLeft="544,216.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="108.6,75.4"
+              Start="0,0"
+              End="108.6,67.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.7"
+                    Point2="0,37.7"
+                    Point3="4,37.7" />
+                  <mssgle:LineSegment
+                    End="104.6,37.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="104.6,37.7"
+                    Point2="108.6,37.7"
+                    Point3="108.6,41.7" />
+                  <mssgle:LineSegment
+                    End="108.6,67.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
